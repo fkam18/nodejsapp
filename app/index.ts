@@ -6,7 +6,7 @@ const app = express();
 app.get('*', (req: express.Request, res: express.Response) => {
   const response = {
     hostname: req.hostname,
-    version: "5.1",
+    version: "5.2",
     uptime: process.uptime(),
     podname: process.env.HOSTNAME,
   };
